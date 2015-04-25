@@ -126,11 +126,11 @@ h1 {
   text-align: justify;
 }
 
-.footer {
+footer {
 	padding: 5px;
   bottom: 0;
   width: 98%;
-  position: absolute;
+  position: relative;
 }
 
 .style-footer {
@@ -207,9 +207,6 @@ h1 {
     width: 182px;
     margin-top:-64px;
   }
-  .footer{
-    position: relative;
-  }
 }
 
 
@@ -257,7 +254,7 @@ h1 {
     margin-left: 0px;
     width: auto;
   }
-  .footer {
+  footer {
   	padding: 5px;
     bottom: 0;
     width: auto;
@@ -347,7 +344,7 @@ h1 {
   }
 
 
-  .footer {
+  footer {
   	padding: 5px;
     bottom: 0;
     width: 75%;
