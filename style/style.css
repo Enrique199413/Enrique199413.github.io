@@ -1,0 +1,394 @@
+@import url(http://fonts.googleapis.com/css?family=Ek+Mukta:200);
+@font-face {
+  font-family: biloxi;
+  src: url('../fonts/biloxi-script.ttf');
+}
+
+body {
+	margin:0;
+	padding:0;
+  font-family: 'Ek Mukta';
+}
+
+/*clases para menu izquierdo*/
+.text-align-right{
+	text-align: right;
+}
+
+
+
+.pull-right {
+  float:right !important;
+}
+
+.pull-left {
+  float:left !important;
+}
+
+.container{
+  width: 100%;
+  height: 80%;
+}
+.left-container {
+  width: 40%;
+  padding: 40px;
+}
+
+.right-container {
+  width: 40%;
+  padding: 40px;
+}
+
+.columna-larga {
+	height: 100%;
+  margin-top: -20px;
+}
+
+.lista-no-ordenada {
+	list-style:none;
+	margin-right: 5px;
+}
+
+.list-item {
+	font-size: 35pt;
+  border-bottom: 1px solid #68c4a9;
+  cursor: pointer;
+  padding-left:10px;
+  text-align: left;
+}
+
+.list-item a{
+  text-decoration: none;
+  color:black;
+}
+
+.list-item:hover {
+  border-bottom: 1px solid #68c4a9;
+  background: -moz-linear-gradient(top,  rgba(125,185,232,0) 0%, rgba(115,191,201,0) 50%, rgba(104,196,169,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,185,232,0)), color-stop(50%,rgba(115,191,201,0)), color-stop(100%,rgba(104,196,169,1)));
+  background: -webkit-linear-gradient(top,  rgba(125,185,232,0) 0%,rgba(115,191,201,0) 50%,rgba(104,196,169,1) 100%);
+  background: -o-linear-gradient(top,  rgba(125,185,232,0) 0%,rgba(115,191,201,0) 50%,rgba(104,196,169,1) 100%);
+  background: -ms-linear-gradient(top,  rgba(125,185,232,0) 0%,rgba(115,191,201,0) 50%,rgba(104,196,169,1) 100%);
+  background: linear-gradient(to bottom,  rgba(125,185,232,0) 0%,rgba(115,191,201,0) 50%,rgba(104,196,169,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#68c4a9',GradientType=0 );
+}
+
+.lista {
+	padding:5px;
+}
+
+.header{
+  text-align: center;
+  height: 150px;
+  background: #ace5d5;
+}
+.menu-horizontal{
+  background: rgb(183, 252, 252);
+  margin-top: -45px;
+}
+
+.list-horizontal {
+  margin: 0 auto 0 auto;
+  width: 640px;
+  height: 48px;
+}
+
+.image-style {
+  width: 406px;
+}
+
+h1 {
+  font-size: 55pt;
+}
+
+.list-horizontal > li {
+  float: left;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.list-horizontal > li > a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 24pt;
+}
+
+.panel {
+	text-align: bottom;
+	margin: 100px;
+	box-shadow: 1px 1px 2px black;
+}
+
+.text-justified {
+  font-style: normal;
+  font-size: x-large;
+  text-align: justify;
+}
+
+.footer {
+	padding: 5px;
+  bottom: 0;
+  width: 98%;
+  position: relative;
+}
+
+.style-footer {
+  font-size: 20pt;
+  margin-top: -66px;
+  border-top: 1px solid #68c4a9;
+  padding-top: 42px;
+  padding-right: 170px;
+}
+
+
+.footer-name {
+	font-family: biloxi;
+	font-size: 145pt;
+  margin-bottom: -35px;
+}
+
+.history-footer-name {
+	font-size: 45pt;
+}
+
+.other-sections{
+  margin-top: -18px;
+  padding-top: 0px;
+}
+
+.contact {
+  width: 98%;
+  position: relative;
+  margin-left: 10px;
+  text-align: right;
+}
+
+.images {
+
+}
+
+.logos {
+  height: 38px;
+  position: relative;
+  margin-top: -58px;
+}
+
+.fb {
+  width: 38px;
+  margin-top: -3px;
+  position: absolute;
+  right: 119px;
+}
+
+.instagram {
+  width: 27px;
+  position: absolute;
+  right: 81px;
+  margin-top: 2px;
+}
+
+.twitter {
+  width: 36px;
+  position: absolute;
+  right: 25px;
+  margin-top: 3px;
+}
+
+@media (min-width: 991px) and (max-width: 1061px){
+  .style-footer {
+    padding-right: 0px;
+    font-size: 20pt;
+    margin-top: 0px;
+    border-top: 1px solid #68c4a9;
+    padding-top: 0px;
+  }
+  .logos{
+    width: 182px;
+    margin-top:-64px;
+  }
+}
+
+
+@media (min-width: 250px) and (max-width: 990px){
+  .container {
+    height: 100%;
+  }
+  .list-horizontal {
+    margin: 0 auto 0 auto;
+    width: auto;
+    height: auto;
+    list-style: none;
+    text-align: center;
+    margin-left: -40px;
+  }
+  .header{
+    text-align: center;
+    height: auto;
+    background: #ace5d5;
+  }
+  .menu-horizontal li{
+    float:none;
+
+  }
+  .pull-left {
+    float:none;
+  }
+  .left-container {
+    width: auto;
+    padding: 10px;
+  }
+  .pull-right{
+    float:none !important;
+  }
+  .right-container {
+    width: auto;
+    text-align: center;
+  }
+  .text-justified{
+    font-size: normal;
+    text-align: justify;
+  }
+
+  .image-style {
+    margin-left: 0px;
+    width: auto;
+  }
+  .footer {
+  	padding: 5px;
+    bottom: 0;
+    width: auto;
+    position: relative;
+  }
+
+  .style-footer {
+    font-size: 15pt;
+    margin-top: -66px;
+    border-top: 1px solid #68c4a9;
+    padding-top: 42px;
+    width:auto;
+    padding-right: 0px;
+  }
+
+  .footer-name {
+  	font-family: biloxi;
+  	font-size: 145pt;
+    margin-bottom: -35px;
+  }
+
+  .history-footer-name {
+  	font-size: 45pt;
+  }
+
+  .other-sections{
+    margin-top: -18px;
+    padding-top: 0px;
+    text-align:center;
+  }
+  .contact {
+    width: auto;
+    text-align: center;
+  }
+  .logos{
+    height: 38px;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    margin-left: -35%;
+  }
+}
+
+
+@page{
+  size: A4;
+}
+
+@media print {
+  .container {
+    height: auto;
+  }
+  body {
+    margin: 1in;
+    line-height: 2;
+  }
+  .header{
+    margin-top:0px;
+    height: 110px;
+  }
+  img {
+    display:none;
+  }
+  .menu-horizontal {
+    display:none;
+  }
+  .pull-left {
+    float:none;
+  }
+  .left-container {
+    width: 100%;
+    padding: 10px;
+  }
+  .pull-right{
+    pull-right:none;
+  }
+  .right-container {
+    display:none;
+  }
+  .text-justified{
+    font-size: normal;
+    text-align: justify;
+  }
+  video,audio, object {
+    display: none
+  }
+
+
+  .footer {
+  	padding: 5px;
+    bottom: 0;
+    width: 75%;
+    position: absolute;
+  }
+
+  .style-footer {
+    font-size: 15pt;
+    margin-top: -66px;
+    border-top: 1px solid #68c4a9;
+    padding-top: 42px;
+    width:auto;
+    padding-right: 0px;
+  }
+
+  .footer-name {
+  	font-family: biloxi;
+  	font-size: 145pt;
+    margin-bottom: -35px;
+  }
+
+  .history-footer-name {
+  	font-size: 45pt;
+  }
+
+  .other-sections{
+    margin-top: -18px;
+    padding-top: 0px;
+    text-align:center;
+  }
+  .logos {
+    display:none;
+  }
+  .hidentinprint{
+    display:none;
+  }
+  .contact {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+@page:first {
+  size: A4;
+  margin: 0;
+}
