@@ -130,7 +130,7 @@ h1 {
 	padding: 5px;
   bottom: 0;
   width: 98%;
-  position: relative;
+  position: absolute;
 }
 
 .style-footer {
