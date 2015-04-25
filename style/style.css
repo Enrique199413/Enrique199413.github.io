@@ -207,6 +207,9 @@ h1 {
     width: 182px;
     margin-top:-64px;
   }
+  .footer{
+    position: relative;
+  }
 }
 
 
