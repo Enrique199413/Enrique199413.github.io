@@ -196,6 +196,179 @@ h1 {
   margin-top: 3px;
 }
 
+/*llllllllllllllllllllllllll*/
+main {
+	margin-top: 20px;
+}
+
+.resume h1{
+	font-size: 28px;
+	text-transform: uppercase;
+}
+h2{
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+}
+.resume .container{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.right{
+	float:right;
+	width: 50%;
+}
+
+.left{
+	float: left;
+	width: 50%;
+}
+
+.clear{
+	clear: both;
+}
+
+
+.header-resume .left{
+	width: 50%;
+}
+
+.header-resume .right {
+	text-align: right;
+	padding-top: 15px;
+	color: #939597;
+
+}
+
+
+.resume h1, .resume h2{
+	font-family: 'Oswald', sans-serif;
+	color: #95a83a;
+}
+h3{
+	margin: 0px;
+}
+.header-resume h1{
+	margin: 0px;
+	letter-spacing: 2px;
+}
+
+li{
+	font-size: 14px;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+
+main ul{
+	padding-left: 0px !important;
+}
+
+.footer-resume{
+	border-top: 1px solid gray;
+	margin-top: 10px;
+	width: 100%;
+	margin-bottom:30px;
+}
+
+.footer-resume img{
+	float: left;
+	margin: 10px 15px;
+	width: 56px;
+}
+.footer-resume ul {
+	float: left;
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 12%;
+
+}
+
+.footer-resume h2 {
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+p{
+	font-size: 14px;
+}
+
+main p{
+	margin: 0px;
+}
+
+main .left{
+	width: 40%;
+
+}
+
+main .right{
+	width: 40%;
+
+}
+
+.left-left,.right-left{
+	float: left;
+	width: 8%;
+}
+.left-right{
+	border-left:1px solid gray;
+	float: right;
+	width: 84%;
+}
+.right-right{
+	border-left:1px solid gray;
+	float: right;
+	width: 85%;
+}
+
+
+.languages img{
+	float: right;
+	margin-top: -42px;
+	padding-right: 130px
+}
+
+
+.courses img{
+	float: left;
+	padding-right: 10px;
+}
+.right-right li{
+	padding-bottom: 10px;
+}
+
+.skills img{
+  margin-top: -22px;
+  float: right;
+  padding-right: 80px;
+}
+
+.left-left img, .right-left img{
+	margin-top: 15px;
+}
+.dot{
+    background: black;
+    border: 2px solid white;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    margin-left: -57px;
+    position: absolute;
+    margin-top: 29px;
+}
+section{
+	padding-left: 20px;
+}
+
+.left li { padding-bottom: 10px; }
+
+/*lllllllllllllllllllllllllllllllllll*/
+
 @media (min-width: 801px) and (max-width: 1061px){
   .style-footer {
     padding-right: 0px;
