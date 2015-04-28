@@ -207,11 +207,28 @@ h1 {
 /*llllllllllllllllllllllllll*/
 main {
 	margin-top: 20px;
+  padding: 40px;
+}
+
+.loader-10 {
+  background: rgb(0, 119, 255);
+  width: 220px;
+  height: 15px;
+  float: left;
+  margin-top: -30px;
+  margin-left: 105px;
+}
+
+.loader-10:before {
+  background: red;
+  width: 40px;
+  height: 15px;
+  content: ' ';
+  float: left;
 }
 
 .resume h1{
-	font-size: 28px;
-	text-transform: uppercase;
+	font-size: 45px;
 }
 h2{
 	font-size: 24px;
@@ -247,15 +264,24 @@ h2{
 .header-resume .right {
 	text-align: right;
 	padding-top: 15px;
-	color: #939597;
+	color: #ACE5D5;
 
 }
 
 
 .resume h1, .resume h2{
-	font-family: 'Oswald', sans-serif;
-	color: #95a83a;
+	color: #ACE5D5;
 }
+
+.small{
+  color: black;
+  padding-left: 20px;
+}
+
+.center{
+  text-align:center;
+}
+
 h3{
 	margin: 0px;
 }
