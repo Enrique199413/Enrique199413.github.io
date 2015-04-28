@@ -218,6 +218,9 @@ main {
   margin-top: -30px;
   margin-left: 105px;
 }
+.months{
+  width: 50px;
+}
 
 .loader-10:before {
   background: red;
@@ -360,7 +363,6 @@ main .right{
 	width: 85%;
 }
 
-
 .languages img{
 	float: right;
 	margin-top: -42px;
@@ -422,6 +424,35 @@ section{
 }
 
 @media (min-width: 250px) and (max-width: 800px){
+
+  .header-resume .left{
+  	width: auto;
+  }
+  .skills img, .courses img, .languages img, .right-right,
+  .left-right, .left-left,.right-left, .footer-resume img {
+    float:none;
+  }
+
+  .footer-resume{
+  	float:none;
+    text-align:center;
+  }
+  .footer-resume ul {
+    float: none;
+    margin: 0 auto;
+    margin-top: 0px;
+    width: auto;
+    padding-left: 0px;
+  }
+  .icon {
+    width:10%;
+  }
+
+  main .left, main .right {
+    width:auto;
+    float:none;
+  }
+
   .footer-name {
   	font-family: biloxi;
   	font-size: 60pt!important;
