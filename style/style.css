@@ -12,10 +12,18 @@ i {
   width: 5% !important;
 }
 
-body {
-	margin:0;
+body{
+  -webkit-print-color-adjust:exact;
+}
+
+body, * {
+	margin-top:0;
 	padding:0;
   font-family: 'Ek Mukta';
+}
+
+.video-container {
+  padding: 40px;
 }
 
 /*clases para menu izquierdo*/
@@ -53,7 +61,8 @@ body {
 .lista-no-ordenada {
 	list-style:none;
   width:250px;
-	margin-right: 5px;
+  margin-top: 50px;
+  margin-left: 30px;
 }
 
 .list-item {
@@ -87,12 +96,12 @@ body {
 
 .list-horizontal {
   margin: 0 auto 0 auto;
-  width: 640px;
+  width: 500px;
   height: 48px;
 }
 
 .image-style {
-  width: 406px;
+  width: 480px;
 }
 
 h1 {
@@ -124,11 +133,12 @@ h1 {
   text-align: justify;
 }
 
-.footer {
+.footer-style {
 	padding: 5px;
   bottom: 0;
   width: 98%;
   position: relative;
+  margin-top: 85px;
 }
 
 .absoluty{
@@ -143,11 +153,19 @@ h1 {
   margin-top: -22px;
   border-top: 1px solid #68c4a9;
   padding-top: 42px;
-  padding-right: 170px;
 }
 
 .style-footer span{
   color: #68c4a9;
+}
+
+.style-footer span a{
+  text-decoration:none;
+}
+
+.style-footer span i{
+  color: black;
+  font-size: 20pt !important;
 }
 
 
@@ -413,7 +431,7 @@ main ul{
 	border-top: 1px solid gray;
 	margin-top: 10px;
 	width: 100%;
-	margin-bottom:30px;
+  height: 145px;
 }
 
 .footer-resume img{
@@ -504,32 +522,35 @@ main .right{
 }
 section{
 	padding-left: 20px;
+  margin:10px;
 }
 
 .left li { padding-bottom: 10px; }
 
 /*lllllllllllllllllllllllllllllllllll*/
 
-@media (min-width: 801px) and (max-width: 1061px){
-  .style-footer {
-    padding-right: 0px;
-    font-size: 20pt;
-    margin-top: 0px;
-    border-top: 1px solid #68c4a9;
-    padding-top: 0px;
-  }
-  .logos{
-    width: 182px;
-    margin-top:-64px;
-  }
-}
 
 .container {
   height: 100%;
 }
 
-@media (min-width: 250px) and (max-width: 800px){
-
+@media (max-width: 991px) {
+  .image-style {
+    width: 400px;
+    margin: 0px;
+  }
+  .resume-icon{
+    font-size: 30pt!important;
+    float: left;
+    padding-right: 10px;
+  }
+  video{
+    width:400px;
+  }
+  .video-container {
+    padding: 20px;
+    text-align: center;
+  }
   .header-resume .left{
   	width: auto;
   }
@@ -600,10 +621,9 @@ section{
   }
 
   .image-style {
-    margin-left: 0px;
-    width: auto;
+
   }
-  .footer {
+  .footer-style {
   	padding: 5px;
     bottom: 0;
     width: auto;
@@ -654,16 +674,12 @@ section{
 }
 
 @media print {
-  .container {
-    height: auto;
-  }
   body {
     margin: 1in;
     line-height: 2;
   }
   .header{
-    margin-top:0px;
-    height: 110px;
+    display:none;
   }
   img {
     display:none;
@@ -671,19 +687,76 @@ section{
   .menu-horizontal {
     display:none;
   }
-  .pull-left {
+  .resume{
+    margin:0px !important;
+    padding:0 !important;
+  }
+  .resume h1{
+    font-size:17pt !important;
+  }
+  .resume .left{
     float:none;
   }
-  .left-container {
-    width: 100%;
-    padding: 10px;
+  .left-right, .left-left, .left, .right, .right-right{
+  	border-left:none;
+  	float: none;
+  	width: auto;
+    padding:0;
   }
-  .pull-right{
-    pull-right:none;
+  .break, .footer-resume{
+    page-break-before: always;
   }
-  .right-container {
+  .left-right section, .right-right section{
+    padding:0;
+    margin:0;
+  }
+  .left-right section ul li{
+    float:left;
+    text-align:left;
+    padding-left:19px;
+  }
+  .right-right section ul li{
+    padding:0;
+    margin:0;
+  }
+  .footer-resume .icon{
+    float:left;
+  }
+  .row{
+    padding:15px;
+  }
+  .footer-resume ul li, .footer-resume ul h3{
+    margin-left:70px;
+    float:none;
+    text-align:left !important;
+  }
+  .footer-resume{
+  	border-top: none;
+  	margin-top: 10px;
+  	width: auto;
+    height: 50%;
+  }
+
+  .footer-resume img{
+  	display:none;
+  }
+  .footer-resume ul {
+  	float: none;
+  	margin: 0 auto;
+  	width: auto;
+
+  }
+  .footer-resume h2 {
+  	margin: 0 auto;
+    border:none;
+    text-align:left;
+  }
+  .languages ul li{
     display:none;
   }
+
+
+
   .text-justified{
     font-size: normal;
     text-align: justify;
@@ -691,9 +764,6 @@ section{
   video,audio, object {
     display: none
   }
-
-
-
 
   .style-footer {
     font-size: 15pt;
@@ -703,10 +773,13 @@ section{
     width:auto;
     padding-right: 0px;
   }
-
+  .loader-10, .loader-20, .loader-30, .loader-40, .loader-50,
+  .loader-60, .loader-70{
+    margin-top: -25px;
+  }
   .footer-name {
   	font-family: biloxi;
-  	font-size: 145pt;
+  	font-size: 100pt;
     margin-bottom: -35px;
   }
 
@@ -719,9 +792,7 @@ section{
     padding-top: 0px;
     text-align:center;
   }
-  .logos {
-    display:none;
-  }
+
   .hidentinprint{
     display:none;
   }
@@ -729,7 +800,6 @@ section{
     width: 100%;
     text-align: center;
   }
-
 }
 
 @page:first {
