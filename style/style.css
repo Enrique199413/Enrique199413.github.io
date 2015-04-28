@@ -4,6 +4,14 @@
   src: url('../fonts/biloxi-script.ttf');
 }
 
+i {
+  font-size: 45pt!important;
+}
+
+.icon{
+  width: 5% !important;
+}
+
 body {
 	margin:0;
 	padding:0;
