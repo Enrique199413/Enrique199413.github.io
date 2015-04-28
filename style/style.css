@@ -211,7 +211,7 @@ main {
 }
 
 .loader-10 {
-  background: rgb(0, 119, 255);
+  background: grey;
   width: 220px;
   height: 15px;
   float: left;
@@ -223,13 +223,118 @@ main {
 }
 
 .loader-10:before {
-  background: red;
-  width: 40px;
+  background: #68c4a9;
+  width: 180px;
   height: 15px;
   content: ' ';
   float: left;
 }
 
+.loader-20 {
+  background: grey;
+  width: 220px;
+  height: 15px;
+  float: left;
+  margin-top: -30px;
+  margin-left: 105px;
+}
+
+.loader-20:before {
+  background: #68c4a9;
+  width: 150px;
+  height: 15px;
+  content: ' ';
+  float: left;
+}
+
+.loader-30 {
+  background: grey;
+  width: 220px;
+  height: 15px;
+  float: left;
+  margin-top: -30px;
+  margin-left: 105px;
+}
+
+.loader-30:before {
+  background: #68c4a9;
+  width: 200px;
+  height: 15px;
+  content: ' ';
+  float: left;
+}
+
+
+.loader-40 {
+  background: grey;
+  width: 220px;
+  height: 15px;
+  float: left;
+  margin-top: -30px;
+  margin-left: 105px;
+}
+
+.loader-40:before {
+  background: #68c4a9;
+  width: 190px;
+  height: 15px;
+  content: ' ';
+  float: left;
+}
+
+
+.loader-50 {
+  background: grey;
+  width: 220px;
+  height: 15px;
+  float: left;
+  margin-top: -30px;
+  margin-left: 105px;
+}
+
+.loader-50:before {
+  background: #68c4a9;
+  width: 170px;
+  height: 15px;
+  content: ' ';
+  float: left;
+}
+
+
+.loader-60 {
+  background: grey;
+  width: 220px;
+  height: 15px;
+  float: left;
+  margin-top: -30px;
+  margin-left: 105px;
+}
+
+.loader-60:before {
+  background: #68c4a9;
+  width: 200px;
+  height: 15px;
+  content: ' ';
+  float: left;
+}
+
+
+.loader-70 {
+  background: grey;
+  width: 220px;
+  height: 15px;
+  float: left;
+  margin-top: -30px;
+  margin-left: 105px;
+}
+
+.loader-70:before {
+  background: #68c4a9;
+  width: 190px;
+  height: 15px;
+  content: ' ';
+  float: left;
+}
 .resume h1{
 	font-size: 45px;
 }
