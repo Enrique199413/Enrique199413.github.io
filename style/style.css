@@ -136,13 +136,11 @@ h1 {
 }
 
 .panel {
-	text-align: bottom;
 	margin: 100px;
 	box-shadow: 1px 1px 2px black;
 }
 
 .text-justified {
-  font-style: normal;
   font-size: x-large;
   text-align: justify;
 }
@@ -620,7 +618,7 @@ section{
     text-align: center;
   }
   .text-justified{
-    font-size: normal;
+
     text-align: justify;
   }
 
