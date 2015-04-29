@@ -538,6 +538,10 @@ section{
     width: 400px;
     margin: 0px;
   }
+  .resume-menu, .broadcast-menu, .story-menu {
+    width: auto;
+  }
+
   .resume-icon{
     font-size: 30pt!important;
     float: left;
