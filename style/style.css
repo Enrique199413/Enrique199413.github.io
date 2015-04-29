@@ -618,7 +618,6 @@ section{
     text-align: center;
   }
   .text-justified{
-
     text-align: justify;
   }
 
@@ -766,7 +765,6 @@ section{
 
 
   .text-justified{
-    font-size: normal;
     text-align: justify;
   }
   video,audio, object, iframe {
