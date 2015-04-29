@@ -13,6 +13,16 @@ i {
   height:60px;
 }
 
+.broadcast-menu {
+  width: 400px !important;
+}
+.story-menu {
+  width: 469px !important;
+}
+.resume-menu {
+  width: 445px !important;
+}
+
 body{
   -webkit-print-color-adjust:exact;
 }
@@ -27,6 +37,7 @@ body, * {
 
 .video-container {
   padding: 40px;
+  text-align: center;
 }
 
 /*clases para menu izquierdo*/
