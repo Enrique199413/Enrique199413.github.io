@@ -755,7 +755,7 @@ section{
     font-size: normal;
     text-align: justify;
   }
-  video,audio, object {
+  video,audio, object, iframe {
     display: none
   }
 
