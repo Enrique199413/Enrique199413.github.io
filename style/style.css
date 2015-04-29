@@ -539,7 +539,7 @@ section{
     margin: 0px;
   }
   .resume-menu, .broadcast-menu, .story-menu {
-    width: auto;
+    width: auto !important;
   }
 
   .resume-icon{
