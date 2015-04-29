@@ -40,7 +40,7 @@ body, * {
   text-align: center;
 }
 
-/*clases para menu izquierdo*/
+/*classes for left menu*/
 .text-align-right{
 	text-align: right;
 }
@@ -64,7 +64,7 @@ body, * {
   padding: 40px;
 }
 
-.columna-larga {
+.long-column {
   margin-top: -20px;
 }
 
@@ -72,7 +72,7 @@ body, * {
   height: 50%;
 }
 
-.lista-no-ordenada {
+.unordered-list {
 	list-style:none;
   width:250px;
   margin-top: 50px;
@@ -153,13 +153,6 @@ h1 {
   margin-top: 85px;
 }
 
-.absoluty{
-  padding: 5px;
-  bottom: 0;
-  width: 98%;
-  position:fixed;
-}
-
 .style-footer {
   font-size: 20pt;
   margin-top: -22px;
@@ -187,7 +180,7 @@ h1 {
   margin-bottom: -35px;
 }
 
-.history-footer-name {
+.footer-name-style {
 	font-size: 45pt;
 }
 
@@ -203,38 +196,7 @@ h1 {
   text-align: right;
 }
 
-.images {
-
-}
-
-.logos {
-  height: 38px;
-  position: relative;
-  margin-top: -58px;
-}
-
-.fb {
-  width: 38px;
-  margin-top: -3px;
-  position: absolute;
-  right: 119px;
-}
-
-.instagram {
-  width: 27px;
-  position: absolute;
-  right: 81px;
-  margin-top: 2px;
-}
-
-.twitter {
-  width: 36px;
-  position: absolute;
-  right: 25px;
-  margin-top: 3px;
-}
-
-/*llllllllllllllllllllllllll*/
+/*style-resume*/
 main {
 	margin-top: 20px;
   padding: 40px;
@@ -485,17 +447,6 @@ main .right{
 	width: 85%;
 }
 
-.languages img{
-	float: right;
-	margin-top: -42px;
-	padding-right: 130px
-}
-
-
-.courses img{
-	float: left;
-	padding-right: 10px;
-}
 .right-right li{
 	padding-bottom: 10px;
 }
@@ -512,16 +463,7 @@ main .right{
 .left-left img, .right-left img{
 	margin-top: 15px;
 }
-.dot{
-    background: black;
-    border: 2px solid white;
-    height: 10px;
-    width: 10px;
-    border-radius: 10px;
-    margin-left: -57px;
-    position: absolute;
-    margin-top: 29px;
-}
+
 section{
 	padding-left: 20px;
   margin:10px;
@@ -529,7 +471,7 @@ section{
 
 .left li { padding-bottom: 10px; }
 
-/*lllllllllllllllllllllllllllllllllll*/
+/*end style resume*/
 
 @media (max-width: 991px) {
   .image-style {
@@ -555,7 +497,7 @@ section{
   .header-resume .left{
   	width: auto;
   }
-  .skills img, .courses img, .languages img, .right-right,
+  .skills img, .right-right,
   .left-right, .left-left,.right-left, .footer-resume img {
     float:none;
   }
@@ -599,13 +541,11 @@ section{
     height: auto;
     background: #ace5d5;
   }
-  .menu-horizontal li{
+  .menu-horizontal li, .pull-left{
     float:none;
 
   }
-  .pull-left {
-    float:none;
-  }
+
   .left-container {
     width: auto;
     padding: 10px;
@@ -621,9 +561,6 @@ section{
     text-align: justify;
   }
 
-  .image-style {
-
-  }
   .footer-style {
   	padding: 5px;
     bottom: 0;
@@ -646,7 +583,7 @@ section{
     margin-bottom: -35px;
   }
 
-  .history-footer-name {
+  .footer-name-style {
   	font-size: 45pt;
   }
 
@@ -667,144 +604,4 @@ section{
     text-align: center;
     margin-left: -35%;
   }
-}
-
-
-@page{
-  size: A4;
-}
-
-@media print {
-  body {
-    margin: 1in;
-    line-height: 2;
-  }
-  .header{
-    display:none;
-  }
-  img {
-    display:none;
-  }
-  .menu-horizontal {
-    display:none;
-  }
-  .resume{
-    margin:0px !important;
-    padding:0 !important;
-  }
-  .resume h1{
-    font-size:17pt !important;
-  }
-  .resume .left{
-    float:none;
-  }
-  .left-right, .left-left, .left, .right, .right-right{
-  	border-left:none;
-  	float: none;
-  	width: auto;
-    padding:0;
-  }
-  .break, .footer-resume{
-    page-break-before: always;
-  }
-  .left-right section, .right-right section{
-    padding:0;
-    margin:0;
-  }
-  .left-right section ul li{
-    float:left;
-    text-align:left;
-    padding-left:19px;
-  }
-  .right-right section ul li{
-    padding:0;
-    margin:0;
-  }
-  .footer-resume .icon{
-    float:left;
-  }
-  .row{
-    padding:15px;
-  }
-  .footer-resume ul li{
-    margin-left:70px;
-    float:none;
-    text-align:left !important;
-  }
-  .icon{
-    margin-left:-90px !important;
-    float:left;
-  }
-  .footer-resume{
-  	border-top: none;
-  	margin-top: 10px;
-  	width: auto;
-  }
-
-  .footer-resume img{
-  	display:none;
-  }
-  .footer-resume ul {
-  	float: none;
-  	margin: 0 auto;
-  	width: auto;
-  }
-  .footer-resume h2 {
-  	margin: 0 auto;
-    border:none;
-    text-align:left;
-  }
-  .languages ul li span{
-    display:none;
-  }
-  .languages ul li{
-    float:left;
-    padding-left:30px !important;
-  }
-
-
-
-  .text-justified{
-    text-align: justify;
-  }
-  video,audio, object, iframe {
-    display: none
-  }
-
-  .style-footer {
-    font-size: 15pt;
-    margin-top: -22px;
-    border-top: 1px solid #68c4a9;
-    padding-top: 42px;
-    width:auto;
-    padding-right: 0px;
-  }
-  .footer-name {
-  	font-family: biloxi;
-  	font-size: 100pt;
-    margin-bottom: -35px;
-  }
-
-  .history-footer-name {
-  	font-size: 45pt;
-  }
-
-  .other-sections{
-    margin-top: -18px;
-    padding-top: 0px;
-    text-align:center;
-  }
-
-  .hidentinprint{
-    display:none;
-  }
-  .contact {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@page:first {
-  size: A4;
-  margin: 0;
 }

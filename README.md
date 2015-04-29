@@ -1,2 +1,1 @@
-# saturdayExample.github.io
-Practices
+# daniela longo website
