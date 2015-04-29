@@ -10,6 +10,7 @@ i {
 
 .icon{
   width: 5% !important;
+  height:60px;
 }
 
 body{
@@ -232,9 +233,7 @@ main {
   background: grey;
   width: 220px;
   height: 15px;
-  float: left;
-  margin-top: -30px;
-  margin-left: 105px;
+  float:right;
 }
 .months{
   width: 50px;
@@ -245,16 +244,14 @@ main {
   width: 180px;
   height: 15px;
   content: ' ';
-  float: left;
+  float:right;
 }
 
 .loader-20 {
   background: grey;
   width: 220px;
   height: 15px;
-  float: left;
-  margin-top: -30px;
-  margin-left: 105px;
+  float:right;
 }
 
 .loader-20:before {
@@ -262,16 +259,14 @@ main {
   width: 150px;
   height: 15px;
   content: ' ';
-  float: left;
+  float:right;
 }
 
 .loader-30 {
   background: grey;
   width: 220px;
   height: 15px;
-  float: left;
-  margin-top: -30px;
-  margin-left: 105px;
+  float:right;
 }
 
 .loader-30:before {
@@ -279,7 +274,7 @@ main {
   width: 200px;
   height: 15px;
   content: ' ';
-  float: left;
+  float:right;
 }
 
 
@@ -287,9 +282,7 @@ main {
   background: grey;
   width: 220px;
   height: 15px;
-  float: left;
-  margin-top: -30px;
-  margin-left: 105px;
+  float:right;
 }
 
 .loader-40:before {
@@ -297,7 +290,7 @@ main {
   width: 190px;
   height: 15px;
   content: ' ';
-  float: left;
+  float:right;
 }
 
 
@@ -305,9 +298,7 @@ main {
   background: grey;
   width: 220px;
   height: 15px;
-  float: left;
-  margin-top: -30px;
-  margin-left: 105px;
+  float:right;
 }
 
 .loader-50:before {
@@ -315,7 +306,7 @@ main {
   width: 170px;
   height: 15px;
   content: ' ';
-  float: left;
+  float:right;
 }
 
 
@@ -323,9 +314,7 @@ main {
   background: grey;
   width: 220px;
   height: 15px;
-  float: left;
-  margin-top: -30px;
-  margin-left: 105px;
+  float:right;
 }
 
 .loader-60:before {
@@ -333,7 +322,7 @@ main {
   width: 200px;
   height: 15px;
   content: ' ';
-  float: left;
+  float:right;
 }
 
 
@@ -341,9 +330,7 @@ main {
   background: grey;
   width: 220px;
   height: 15px;
-  float: left;
-  margin-top: -30px;
-  margin-left: 105px;
+  float:right;
 }
 
 .loader-70:before {
@@ -351,7 +338,7 @@ main {
   width: 190px;
   height: 15px;
   content: ' ';
-  float: left;
+  float:right;
 }
 .resume h1{
 	font-size: 45px;
@@ -501,6 +488,9 @@ main .right{
 	padding-bottom: 10px;
 }
 
+.skills li{
+  width: 325px;
+}
 .skills img{
   margin-top: -22px;
   float: right;
@@ -544,7 +534,7 @@ section{
     float: left;
     padding-right: 10px;
   }
-  video{
+  iframe{
     width:400px;
   }
   .video-container {
@@ -562,6 +552,7 @@ section{
   .footer-resume{
   	float:none;
     text-align:center;
+    height: auto;
   }
   .footer-resume ul {
     float: none;
@@ -725,7 +716,7 @@ section{
   .row{
     padding:15px;
   }
-  .footer-resume ul li, .footer-resume ul h3{
+  .footer-resume ul li{
     margin-left:70px;
     float:none;
     text-align:left !important;
@@ -734,7 +725,6 @@ section{
   	border-top: none;
   	margin-top: 10px;
   	width: auto;
-    height: 50%;
   }
 
   .footer-resume img{
@@ -744,15 +734,18 @@ section{
   	float: none;
   	margin: 0 auto;
   	width: auto;
-
   }
   .footer-resume h2 {
   	margin: 0 auto;
     border:none;
     text-align:left;
   }
-  .languages ul li{
+  .languages ul li span{
     display:none;
+  }
+  .languages ul li{
+    float:left;
+    padding-left:30px !important;
   }
 
 
@@ -772,10 +765,6 @@ section{
     padding-top: 42px;
     width:auto;
     padding-right: 0px;
-  }
-  .loader-10, .loader-20, .loader-30, .loader-40, .loader-50,
-  .loader-60, .loader-70{
-    margin-top: -25px;
   }
   .footer-name {
   	font-family: biloxi;
