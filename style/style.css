@@ -236,7 +236,7 @@ main {
   float:right;
 }
 .months{
-  width: 50px;
+  width: 49px;
 }
 
 .loader-10:before {
@@ -720,6 +720,10 @@ section{
     margin-left:70px;
     float:none;
     text-align:left !important;
+  }
+  .icon{
+    margin-left:-90px !important;
+    float:left;
   }
   .footer-resume{
   	border-top: none;
