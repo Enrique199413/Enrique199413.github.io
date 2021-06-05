@@ -2,40 +2,141 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="width=device-width; initial-scale=1;">
 		<link rel="stylesheet" type="text/css" href="lib/font-awesome-4.3.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<title>Home Page</title>
 	</head>
 	<body>
-		<nav class = "text-align-right long-column home-height">
-			<div class = "lista">
-				<ul class = "unordered-list">
-					<li class = "list-item"><a href="story.html">STORY</a></li>
-					<li class = "list-item"><a href="resume.html">RESUME</a></li>
-					<li class = "list-item"><a href="broadcast.html">BROADCAST</a></li>
-				</ul>
-			</div>
-		</nav>
-		<footer class = "footer-style">
-      <div class ="contact">
-        <span class = "footer-name">Daniela Longo</span>
-        <div class = "fotter-contac-center">
-          <p class ="style-footer other-sections">d.longo@umail.miami.edu
-            <span>|</span> 305.299.7079
-            <span class = "hiddeninprint">|</span>
-            <span class = "hiddeninprint">
-              <a href = "https://www.facebook.com/daniela.longo.1044" target = "_blank"><span class="fa fa-facebook-square"></span></a>
-            </span>
-            <span class = "hiddeninprint">
-              <a href = "https://www.instagram.com/longodaniela" target = "_blank"><span class="fa fa-instagram"></span></a>
-            </span>
-            <span class = "hiddeninprint">
-              <a href = "https://www.twitter.com/dclongo" target = "_blank"><span class="fa fa-twitter"></span></a>
-            </span>
-          </p>
-        </div>
-      </div>
-     </footer>
+    <script>
+      const getObjectParams = (() => {
+        const validProperties = {
+          title: 'DefaultValue',
+          firstColor: '2565AE',
+          secondColor: '66D3FA',
+          thirdColor: '0F5298',
+          mainColor: 'DefaultValue',
+          animation: 'DefaultValue',
+          sizeOfTitle: 0
+        };
+        if (window.location.search) {
+          const searchOplit = window.location.search.replace('?', '').split('&');
+          const finalObject = searchOplit.reduce((obj, item) => {
+            let [key, value] = item.split('=');
+            value = value.replace('%20', '');
+            if (obj[key] && validProperties[key]) {
+              obj[key] = value;
+            }
+            return obj;
+          }, validProperties)
+
+          finalObject.sizeOfTitle = finalObject.title.length;
+          return finalObject;
+        } else {
+          return {};
+        }
+      })();
+
+      const {sizeOfTitle} = getObjectParams;
+
+      let time = 140;
+      let allEachCssPTiming = ``;
+      const generateParagraphsAnimations = (item) => {
+        allEachCssPTiming += `.textContainer p:nth-child(${item}) {animation-delay: ${Math.floor(time)}ms;}`;
+        time *= 1.2;
+      }
+
+      const createEachP = (letter, appendItem) => {
+        let pTitle = document.createElement('p');
+        pTitle.textContent = letter;
+        appendItem.appendChild(pTitle);
+      }
+
+      
+      const createTemplate = () => {
+        const {title} = getObjectParams;
+
+        const mainContainer = document.createElement('div');
+        const frame = document.createElement('div');
+        const textContainer = document.createElement('div');
+        
+        textContainer.className = 'textContainer';
+        for(let i = 0; i < sizeOfTitle; i++) {
+          createEachP(title[i], textContainer);
+          generateParagraphsAnimations(i + 1);
+        }
+        mainContainer.appendChild(frame);
+        mainContainer.appendChild(textContainer);
+        const styleSheet = document.createElement('style');
+        styleSheet.textContent = getStyle();
+        document.body.appendChild(styleSheet);
+        
+        document.body.appendChild(mainContainer);
+      }
+
+      const getStyle = () => `
+        .textContainer {
+          display: flex;
+          align-items: flex-start;
+          transform: scale(0.5);
+        }
+        .textContainer p {
+          font-size: 100px;
+          transform: scale(0.9, 1) rotatey(-10deg) translatey(0px);
+          animation: 5s scaling ease infinite;
+          text-shadow: 0 0 #${getObjectParams.firstColor}, 0 0 #${getObjectParams.secondColor}, 0 0 #${getObjectParams.thirdColor};
+          transform-origin: 50% 100%;
+          color: #fff;
+          position: relative;
+          top: 10%;
+          transform-style: preserve-3d;
+          margin-right: 10px;
+          margin-left: 10px;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+        ${allEachCssPTiming}
+        @keyframes scaling {
+          20% {
+            text-shadow: 0px 0 #${getObjectParams.firstColor}, 0px 0 #${getObjectParams.secondColor}, 0px 0 #${getObjectParams.thirdColor};
+            transform: scale(0.9, 1) rotatey(-10deg);
+          }
+          40% {
+            transform: scale(0.9, 2) translatey(16px);
+            text-shadow: -10px 0px #${getObjectParams.firstColor}, -20px 0 #${getObjectParams.secondColor}, -30px 0 #${getObjectParams.thirdColor};
+          }
+          60% {
+            transform: scale(0.9, 1) rotatey(-5deg);
+            text-shadow: 0px 0 #${getObjectParams.firstColor}, 0px 0 #${getObjectParams.secondColor}, 0px 0 #${getObjectParams.thirdColor};
+          }
+          80% {
+            transform: scale(0.9, 2) translatey(16px);
+            text-shadow: 10px 0px #${getObjectParams.firstColor}, 20px 0 #${getObjectParams.secondColor}, 30px 0 #${getObjectParams.thirdColor};
+          }
+        }
+        @keyframes jump {
+          20% {
+            transform: translatey(0) scale(0);
+            opacity: 0;
+          }
+          40% {
+            transform: translatey(-50px) scale(1);
+            opacity: 1;
+          }
+          60% {
+            transform: translatey(0) scale(0);
+            opacity: 0;
+          }
+          80% {
+            transform: translatey(-50px) scale(1);
+            opacity: 1;
+          }
+        }
+      `;
+      
+      if (Object.keys(getObjectParams).length > 0) {
+        createTemplate();
+      }
+      
+    </script>
 	</body>
 </html>
